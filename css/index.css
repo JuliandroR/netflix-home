@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #252729;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.header{
+    width: 90%;
+    display: flex;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .logo{
+    width: 8rem;
+}
+
+.header .categories a{
+    color: antiquewhite;
+    margin: auto 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.emphasis{
+    width: 100%;
+    min-height: 80vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('../img/capa-the-rain.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.emphasis .logo-emphasis{
+    width: 30rem;
+}
+
+.emphasis .description-emphasis{
+    color: antiquewhite;
+    margin-top: 20px;
+    width: 35%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.container-btn{
+    width: 30%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-btn a{
+    border: solid 2px antiquewhite;
+    border-radius: 5px;
+    padding: 0 10px;
+    line-height: 3;
+    color: antiquewhite;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.container-btn a:first-of-type{
+    background-color: antiquewhite;
+    margin-right: 15px;
+    color: #333333;
+}
+
+@media screen and (max-width:700px){
+    .header{
+        justify-content: center;
+    }
+
+    .emphasis .logo-emphasis{
+        width: 20rem;
+    }
+
+    .emphasis .description-emphasis{
+        width: 90%;
+    }
+    
+    .container-btn{
+        width: 90%;
+    }
+}
